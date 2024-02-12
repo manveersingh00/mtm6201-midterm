@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav role="navigation">
+        <a href="index.html">Back to Home</a> 
+    </nav>
+
+    <section id="contact" itemscope itemtype="http://schema.org/ContactPage">
+        <h2>Contact Us</h2>
+        <form action=""  itemprop="mainEntity" itemscope itemtype="http://schema.org/ContactPoint">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name" />
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="@gmail.com" />
+
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" />
+
+            <label for="subject">Subject:</label>
+            <input type="text" id="subject" name="subject" required />
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" cols="30" rows="10" required></textarea>
+
+            <button type="submit" itemprop="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer role="contentinfo">
+        <p>&copy; 2024 TravelMania. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
