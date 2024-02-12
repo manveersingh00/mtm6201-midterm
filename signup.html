@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Home</title>
+  </head>
+
+  <body>
+    <header role="banner">
+      <h1><span>T</span>ravel <span>M</span>ania</h1>
+      <nav role="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main role="main" class="container">
+      <h2><span>O</span>ur <span>P</span>ricing <span>P</span>lans</h2>
+      <section class="pricing-section">
+        <article
+          role="article"
+          class="pricing-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <h3 itemprop="name">Basic Plan</h3>
+          <p class="price" itemprop="price">$19.99/month</p>
+          <ul>
+            <li>Access to basic features</li>
+            <li>Limited destination options</li>
+            <li>Email support</li>
+          </ul>
+          <button class="btn" role="button" aria-label="Choose Basic Plan">
+            Choose Plan
+          </button>
+        </article>
+
+        <article
+          role="article"
+          class="pricing-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <h3 itemprop="name">Standard Plan</h3>
+          <p class="price" itemprop="price">$39.99/month</p>
+          <ul>
+            <li>Access to standard features</li>
+            <li>More destination options</li>
+            <li>Email and phone support</li>
+          </ul>
+          <button class="btn" role="button" aria-label="Choose Standard Plan">
+            Choose Plan
+          </button>
+        </article>
+
+        <article
+          role="article"
+          class="pricing-card"
+          itemscope
+          itemtype="https://schema.org/Product"
+        >
+          <h3 itemprop="name">Premium Plan</h3>
+          <p class="price" itemprop="price">$59.99/month</p>
+          <ul>
+            <li>Access to premium features</li>
+            <li>Unlimited destination options</li>
+            <li>24/7 support</li>
+          </ul>
+          <button class="btn" role="button" aria-label="Choose Premium Plan">
+            Choose Plan
+          </button>
+        </article>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <p>&copy; 2024 TravelMania. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
