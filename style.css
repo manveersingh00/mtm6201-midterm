@@ -1,0 +1,382 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000107;
+  color: #f1ecec;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin-right: 15px;
+}
+
+nav a {
+  text-decoration: none;
+  font-size: larger;
+  padding-right: 4rem;
+  color: white;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #4ac3ff; /*  contrast for hover state */
+}
+.box {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+}
+.box article {
+  flex: 1; /* Takes remaining space in the row */
+  padding-right: 20px; /* Add some spacing between the sections */
+  box-sizing: border-box;
+}
+p {
+  letter-spacing: 2px;
+}
+.box h1 {
+  font-size: 8vh;
+}
+span {
+  color: #4ac3ff; /*  contrast */
+}
+
+.text-section {
+  flex: 1;
+  padding-right: 20px; /* Add some spacing between the sections */
+  box-sizing: border-box;
+}
+
+.image-section {
+  flex-basis: 35%;
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.destination {
+  text-align: start;
+  margin-top: 3rem;
+  margin-left: 1.2rem;
+}
+.card-content {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 200px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+p {
+  color: #666;
+  margin-top: 10px;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 2px solid white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+#contact {
+  margin: 50px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+  border: 2px solid white;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+  background-color: #001b36;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  text-align: start;
+  color: white;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #4caf50;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 2px solid white;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: white;
+}
+
+/* Responsive Styles for contact us page and sign up page */
+@media screen and (max-width: 768px) {
+  #contact {
+    margin: 20px;
+  }
+
+  form {
+    width: 90%;
+  }
+  input,
+  textarea {
+    width: 100%;
+    /* Make the input fields take the full width */
+  }
+}
+
+/* Use of  animation property for form elements */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+form label,
+form input,
+form textarea,
+form button {
+  opacity: 0;
+  animation: fadeIn 0.8s ease-in-out forwards;
+  animation-delay: 0.1s;
+}
+
+/* Adding animation for form submission */
+@keyframes submitAnimation {
+  from {
+    transform: scale(1);
+  }
+
+  to {
+    transform: scale(1.05);
+  }
+}
+
+form button:active {
+  animation: submitAnimation 0.2s ease-in-out;
+}
+#signup h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.skip-link {
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    padding: 0.5rem;
+  }
+
+  .box {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .box article {
+    padding-right: 0;
+  }
+
+  figure.image-container {
+    margin-right: 0;
+  }
+
+  .destination {
+    text-align: center;
+    margin-top: 3rem;
+    margin-left: 0;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+#contact h2 {
+  text-align: center;
+}
+
+.pricing-section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+}
+
+.container h2 {
+  text-align: center;
+  color: white;
+}
+.pricing-card {
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 8px;
+  padding: 20px;
+  height: 40vh;
+  color: black;
+  margin: 20px;
+  text-align: center;
+  transition: transform 0.4s ease-in-out;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.pricing-card h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.price {
+  font-size: 20px;
+  color: #ff4081;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #5cda49;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 768px) {
+  .pricing-card {
+      flex-basis: calc(50% - 40px); /*  two cards per row on smaller screens */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pricing-card {
+      flex-basis: 100%; /*  single card per row on even smaller screens */
+  }
+}
